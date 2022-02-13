@@ -191,3 +191,4 @@ fig.savefig('../Figures/Hw2_6_PLS_LinReg.png')
 results = {'Linear Regression':[rmse,r2],'Variable Elimination':[rmse_vc,r2_vc],'PCA':[rmse_pca,r2_pca],'PLS':[rmse_pls,r2_pls]}
 results_df = pd.DataFrame(results, index =['RMSE','R2'])
     
+
