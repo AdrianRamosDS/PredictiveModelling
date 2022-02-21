@@ -26,7 +26,6 @@ def dqr():
 
 
 
-
 print(df.info())
 print(df.describe(include='all'))
 # pp_report = ProfileReport(df)
