@@ -8,6 +8,7 @@ from pandas_profiling import ProfileReport
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 #%% Dataframe extraction
 df = pd.read_csv("soybean-large.data", header = None)
 names = ["Class","Date", "Plant-stand","Precip","Temp","Hail","Crop-hist","Area-damaged",
