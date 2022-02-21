@@ -21,6 +21,7 @@ col_names = ['Frequency','Angle','Chord_length','Free-stream_velocity','Suction'
 data = pd.read_table('../Data/airfoil_self_noise.dat', names=col_names, header=None)
 data_desc = data.describe()
 
+
 #%% 1. Determination of missin data:
 miss_vals = pd.DataFrame(data.isnull().sum(), columns=['Missing_values'])
 # According to evaluation there's no missing values.
