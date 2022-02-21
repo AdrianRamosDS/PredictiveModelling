@@ -15,6 +15,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 #%% Data extraction
 col_names = ['Frequency','Angle','Chord_length','Free-stream_velocity','Suction','Sound_Pressure_Level']
 data = pd.read_table('../Data/airfoil_self_noise.dat', names=col_names, header=None)
