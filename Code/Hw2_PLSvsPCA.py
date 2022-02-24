@@ -15,10 +15,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 #%% Data extraction
 col_names = ['Frequency','Angle','Chord_length','Free-stream_velocity','Suction','Sound_Pressure_Level']
 data = pd.read_table('../Data/airfoil_self_noise.dat', names=col_names, header=None)
 data_desc = data.describe()
+
 
 #%% 1. Determination of missin data:
 miss_vals = pd.DataFrame(data.isnull().sum(), columns=['Missing_values'])
@@ -191,3 +193,4 @@ fig.savefig('../Figures/Hw2_6_PLS_LinReg.png')
 results = {'Linear Regression':[rmse,r2],'Variable Elimination':[rmse_vc,r2_vc],'PCA':[rmse_pca,r2_pca],'PLS':[rmse_pls,r2_pls]}
 results_df = pd.DataFrame(results, index =['RMSE','R2'])
     
+
